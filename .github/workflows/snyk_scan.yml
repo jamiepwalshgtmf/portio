@@ -10,4 +10,5 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-              command: code test              
+              command: code test
+              snyk auth: ${{ secrets.SNYK_ACCESS_TOKEN }}
